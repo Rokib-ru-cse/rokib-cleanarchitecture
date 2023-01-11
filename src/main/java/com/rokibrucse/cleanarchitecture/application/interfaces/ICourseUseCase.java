@@ -1,0 +1,15 @@
+package com.rokibrucse.cleanarchitecture.application.interfaces;
+
+import org.springframework.stereotype.Component;
+
+import com.rokibrucse.cleanarchitecture.domain.model.Course;
+
+import java.util.List;
+import java.util.Optional;
+
+@Component
+public interface ICourseUseCase {
+    public List<Course> courseList();
+
+    public Optional<Course> courseListStudent(int id);
+}
