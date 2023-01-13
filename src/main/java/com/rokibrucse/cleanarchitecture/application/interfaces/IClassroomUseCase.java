@@ -2,7 +2,7 @@ package com.rokibrucse.cleanarchitecture.application.interfaces;
 
 import org.springframework.stereotype.Component;
 
-import com.rokibrucse.cleanarchitecture.domain.model.Classroom;
+import com.rokibrucse.cleanarchitecture.domain.entities.Classroom;
 
 import java.util.List;
 

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.rokibrucse.cleanarchitecture.application.interfaces.IClassroomUseCase;
 import com.rokibrucse.cleanarchitecture.application.repository.IClassroomRepository;
-import com.rokibrucse.cleanarchitecture.domain.model.Classroom;
+import com.rokibrucse.cleanarchitecture.domain.entities.Classroom;
 
 import java.util.List;
 

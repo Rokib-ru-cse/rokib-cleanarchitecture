@@ -2,7 +2,7 @@ package com.rokibrucse.cleanarchitecture.application.interfaces;
 
 import org.springframework.stereotype.Component;
 
-import com.rokibrucse.cleanarchitecture.domain.model.User;
+import com.rokibrucse.cleanarchitecture.domain.entities.User;
 
 import java.util.List;
 

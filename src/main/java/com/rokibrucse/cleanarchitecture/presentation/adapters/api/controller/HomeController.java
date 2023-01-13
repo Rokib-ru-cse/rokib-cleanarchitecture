@@ -1,4 +1,5 @@
-package com.rokibrucse.cleanarchitecture.presentation.controller;
+package com.rokibrucse.cleanarchitecture.presentation.adapters.api.controller;
+
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

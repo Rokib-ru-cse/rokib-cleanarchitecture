@@ -1,4 +1,4 @@
-package com.rokibrucse.cleanarchitecture.presentation.controller;
+package com.rokibrucse.cleanarchitecture.presentation.adapters.web.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -6,7 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.rokibrucse.cleanarchitecture.application.interfaces.ITeacherUseCase;
-import com.rokibrucse.cleanarchitecture.domain.model.Teacher;
+import com.rokibrucse.cleanarchitecture.domain.entities.Teacher;
 
 import java.util.List;
 @Controller

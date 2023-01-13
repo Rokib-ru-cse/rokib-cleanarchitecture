@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.rokibrucse.cleanarchitecture.application.interfaces.IUserUseCase;
 import com.rokibrucse.cleanarchitecture.application.repository.IUserRepository;
-import com.rokibrucse.cleanarchitecture.domain.model.User;
+import com.rokibrucse.cleanarchitecture.domain.entities.User;
 
 import java.util.List;
 import java.util.Optional;

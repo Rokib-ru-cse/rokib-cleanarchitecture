@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.rokibrucse.cleanarchitecture.application.interfaces.ICategoryUseCase;
 import com.rokibrucse.cleanarchitecture.application.repository.ICategoryRepository;
-import com.rokibrucse.cleanarchitecture.domain.model.Category;
+import com.rokibrucse.cleanarchitecture.domain.entities.Category;
 
 import java.util.List;
 

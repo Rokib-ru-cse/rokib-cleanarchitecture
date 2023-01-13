@@ -1,7 +1,8 @@
-package com.rokibrucse.cleanarchitecture.presentation.controller;
+package com.rokibrucse.cleanarchitecture.presentation.adapters.api.controller;
+
 
 import com.rokibrucse.cleanarchitecture.application.interfaces.IClassroomUseCase;
-import com.rokibrucse.cleanarchitecture.domain.model.Classroom;
+import com.rokibrucse.cleanarchitecture.domain.entities.Classroom;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -1,4 +1,4 @@
-package com.rokibrucse.cleanarchitecture.domain.model;
+package com.rokibrucse.cleanarchitecture.domain.entities;
 
 import jakarta.persistence.*;
 import java.util.*;
