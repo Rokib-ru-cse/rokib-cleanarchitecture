@@ -11,7 +11,6 @@ import com.rokibrucse.cleanarchitecture.domain.entities.Category;
 
 import java.util.List;
 
-@Controller
 public class CategoryController {
 
     @Autowired

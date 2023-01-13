@@ -9,7 +9,6 @@ import com.rokibrucse.cleanarchitecture.application.interfaces.ITeacherUseCase;
 import com.rokibrucse.cleanarchitecture.domain.entities.Teacher;
 
 import java.util.List;
-@Controller
 public class TeacherController {
     @Autowired
     private ITeacherUseCase teacherService;

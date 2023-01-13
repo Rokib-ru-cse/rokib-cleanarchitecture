@@ -13,7 +13,6 @@ import com.rokibrucse.cleanarchitecture.domain.entities.User;
 
 import java.util.List;
 
-@Controller
 public class UserController {
     @Autowired
     private IUserUseCase useCase;

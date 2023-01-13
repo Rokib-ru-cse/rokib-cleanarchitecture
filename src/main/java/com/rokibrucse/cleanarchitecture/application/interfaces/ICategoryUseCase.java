@@ -9,5 +9,5 @@ import java.util.List;
 @Component
 public interface ICategoryUseCase {
     List<Category> categoryList();
-    void save(Category category);
+    Category save(Category category);
 }

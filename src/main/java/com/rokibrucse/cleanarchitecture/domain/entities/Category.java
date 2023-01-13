@@ -1,6 +1,8 @@
 package com.rokibrucse.cleanarchitecture.domain.entities;
 
+
 import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,5 +19,7 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     @Column(nullable = false)
+    @NotNull(message = "name is required")
+    @Min(3)
     private String name;
 }

@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.rokibrucse.cleanarchitecture.application.interfaces.IStudentUseCase;
 
-@Controller
 public class StudentController {
 
     @Autowired

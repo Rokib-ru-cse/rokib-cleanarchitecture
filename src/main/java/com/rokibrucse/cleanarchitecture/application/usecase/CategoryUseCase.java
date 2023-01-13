@@ -19,7 +19,7 @@ public class CategoryUseCase implements ICategoryUseCase {
         return (List<Category>) categoryRepo.findAll();
     }
 
-    public void save(Category category) {
-        categoryRepo.save(category);
+    public Category save(Category category) {
+       return categoryRepo.save(category);
     }
 }

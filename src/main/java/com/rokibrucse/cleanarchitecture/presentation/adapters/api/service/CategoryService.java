@@ -38,7 +38,9 @@ public class CategoryService implements ICategoryService {
         if (!validationResult.isBlank()) {
             throw new ApplicationException(validationResult);
         }
-        return null;
+        Category category2 = categoryUseCase.save(category);
+        return ReturnReponse.<Category>builder().message("Data Got Successfully").succeeded(false).value(category2)
+                .build();
     }
 
 }
