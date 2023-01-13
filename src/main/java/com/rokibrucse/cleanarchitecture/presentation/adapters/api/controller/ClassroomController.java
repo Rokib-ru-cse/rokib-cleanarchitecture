@@ -8,18 +8,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@Controller
+@RestController
 public class ClassroomController {
-    @Autowired
-    private IClassroomUseCase useCase;
 
     @GetMapping("/classrooms")
     public String classroomList(Model model) {
-        model.addAttribute("classrooms",(List<Classroom>) useCase.classroomList());
-        return "classroom/index";
+        return "";
     }
 
 
