@@ -2,21 +2,17 @@ package com.rokibrucse.cleanarchitecture.presentation.adapters.config.exceptionh
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.Collections;
-import java.util.List;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.context.request.WebRequest;
-import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import com.rokibrucse.cleanarchitecture.presentation.adapters.config.returnresponse.ReturnReponse;
 
 @ControllerAdvice
-public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
+public class GlobalExceptionHandler {
 
     @ExceptionHandler(value = Exception.class)
-    public ReturnReponse<Object> reponse(Exception ex, WebRequest request) {
+    public ReturnReponse<Object> handleException(Exception ex) {
         ReturnReponse<Object> response = new ReturnReponse<Object>();
         response.setSucceeded(false);
         response.setValue(null);
