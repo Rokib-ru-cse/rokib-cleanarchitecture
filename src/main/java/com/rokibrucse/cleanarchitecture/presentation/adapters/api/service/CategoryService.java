@@ -7,10 +7,10 @@ import org.springframework.stereotype.Service;
 
 import com.rokibrucse.cleanarchitecture.application.interfaces.ICategoryUseCase;
 import com.rokibrucse.cleanarchitecture.domain.entities.Category;
+import com.rokibrucse.cleanarchitecture.domain.validation.Validation;
 import com.rokibrucse.cleanarchitecture.presentation.adapters.api.interfaces.ICategoryService;
 import com.rokibrucse.cleanarchitecture.presentation.adapters.config.exceptionhandler.ApplicationException;
 import com.rokibrucse.cleanarchitecture.presentation.adapters.config.returnresponse.ReturnReponse;
-import com.rokibrucse.cleanarchitecture.presentation.adapters.config.validation.Validation;
 
 @Service
 public class CategoryService implements ICategoryService {
