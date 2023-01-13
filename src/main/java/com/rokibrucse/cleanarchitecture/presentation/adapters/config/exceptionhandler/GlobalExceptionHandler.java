@@ -35,12 +35,8 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
-            HttpHeaders headers,
-            HttpStatus status, WebRequest request) {
-        Map<String, String> errors = new HashMap<>();
-        ex.getBindingResult().getFieldErrors()
-                .forEach(error -> errors.put(error.getField(), error.getDefaultMessage()));
-        return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
+    public ResponseEntity<ReturnReponse<Object>> handleValidationExceptions(MethodArgumentNotValidException ex) {
+        ReturnReponse<Object> response =  ReturnReponse.<Object>builder().message(ex.getBindingResult().getFieldError().getField()+" "+ex.getBindingResult().getFieldError().getDefaultMessage()).succeeded(false).build();
+        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
     }
 }

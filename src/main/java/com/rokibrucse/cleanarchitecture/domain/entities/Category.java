@@ -18,8 +18,9 @@ public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    @Column(nullable = false)
     @NotNull(message = "name is required")
     @Min(3)
     private String name;
+    @Min(5)
+    private String subCat;
 }

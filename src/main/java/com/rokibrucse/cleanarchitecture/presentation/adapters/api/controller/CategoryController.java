@@ -11,6 +11,8 @@ import com.rokibrucse.cleanarchitecture.presentation.adapters.api.interfaces.ICa
 import com.rokibrucse.cleanarchitecture.presentation.adapters.config.exceptionhandler.ApplicationException;
 import com.rokibrucse.cleanarchitecture.presentation.adapters.config.returnresponse.ReturnReponse;
 
+import jakarta.validation.Valid;
+
 @RestController
 public class CategoryController {
 
@@ -22,7 +24,7 @@ public class CategoryController {
         return categoryService.categoryList();
     }
     @PostMapping("/categories")
-    public ReturnReponse<Category> saveCategory(@RequestBody Category category) throws ApplicationException {
+    public ReturnReponse<Category> saveCategory(@Valid @RequestBody Category category) throws ApplicationException {
         return categoryService.saveCategory(category);
     }
 }
