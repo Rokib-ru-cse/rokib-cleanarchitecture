@@ -6,7 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.rokibrucse.cleanarchitecture.application.interfaces.ICategoryUseCase;
+import com.rokibrucse.cleanarchitecture.application.usecase.ICategoryUseCase;
 import com.rokibrucse.cleanarchitecture.domain.entities.Category;
 
 import java.util.List;

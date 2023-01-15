@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.rokibrucse.cleanarchitecture.application.interfaces.ITeacherUseCase;
+import com.rokibrucse.cleanarchitecture.application.usecase.ITeacherUseCase;
 import com.rokibrucse.cleanarchitecture.domain.entities.Teacher;
 
 import java.util.List;

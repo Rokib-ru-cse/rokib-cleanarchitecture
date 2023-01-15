@@ -1,6 +1,6 @@
 package com.rokibrucse.cleanarchitecture.presentation.adapters.web.controller;
 
-import com.rokibrucse.cleanarchitecture.application.interfaces.IClassroomUseCase;
+import com.rokibrucse.cleanarchitecture.application.usecase.IClassroomUseCase;
 import com.rokibrucse.cleanarchitecture.domain.entities.Classroom;
 
 import org.springframework.beans.factory.annotation.Autowired;

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.rokibrucse.cleanarchitecture.application.interfaces.IUserUseCase;
+import com.rokibrucse.cleanarchitecture.application.usecase.IUserUseCase;
 import com.rokibrucse.cleanarchitecture.domain.entities.User;
 
 import java.util.List;

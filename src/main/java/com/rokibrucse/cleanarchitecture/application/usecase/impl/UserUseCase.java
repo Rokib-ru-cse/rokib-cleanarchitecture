@@ -1,10 +1,10 @@
-package com.rokibrucse.cleanarchitecture.application.usecase;
+package com.rokibrucse.cleanarchitecture.application.usecase.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.rokibrucse.cleanarchitecture.application.interfaces.IUserUseCase;
 import com.rokibrucse.cleanarchitecture.application.repository.IUserRepository;
+import com.rokibrucse.cleanarchitecture.application.usecase.IUserUseCase;
 import com.rokibrucse.cleanarchitecture.domain.entities.User;
 
 import java.util.List;
@@ -27,8 +27,8 @@ public class UserUseCase implements IUserUseCase {
         Optional<User> user = userRepo.findById(id);
         if (user.isPresent()) {
             return user.get();
-        }else{
-           return new User();
+        } else {
+            return new User();
         }
     }
 

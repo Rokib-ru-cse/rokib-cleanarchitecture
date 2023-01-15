@@ -1,4 +1,4 @@
-package com.rokibrucse.cleanarchitecture.application.interfaces;
+package com.rokibrucse.cleanarchitecture.application.usecase;
 
 import org.springframework.stereotype.Component;
 

@@ -1,10 +1,10 @@
-package com.rokibrucse.cleanarchitecture.application.usecase;
+package com.rokibrucse.cleanarchitecture.application.usecase.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.rokibrucse.cleanarchitecture.application.interfaces.IStudentUseCase;
 import com.rokibrucse.cleanarchitecture.application.repository.IStudentRepository;
+import com.rokibrucse.cleanarchitecture.application.usecase.IStudentUseCase;
 import com.rokibrucse.cleanarchitecture.domain.entities.Student;
 
 import java.util.List;

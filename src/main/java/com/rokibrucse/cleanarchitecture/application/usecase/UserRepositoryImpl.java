@@ -1,4 +1,3 @@
-package com.rokibrucse.cleanarchitecture.application.usecase;
 // Each class in the persistence package should implement the corresponding interface defined in the domain layer's 
 // repository package. For example, the UserRepositoryImpl class might implement the UserRepository interface, 
 // providing concrete implementations for methods such as create(), update(), and findById(). 
