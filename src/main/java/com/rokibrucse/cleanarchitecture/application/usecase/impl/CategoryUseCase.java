@@ -6,18 +6,14 @@ import org.springframework.stereotype.Service;
 import com.rokibrucse.cleanarchitecture.application.repository.ICategoryRepository;
 import com.rokibrucse.cleanarchitecture.application.usecase.ICategoryUseCase;
 import com.rokibrucse.cleanarchitecture.domain.entities.Category;
+import com.rokibrucse.cleanarchitecture.domain.returnresponse.ReturnReponse;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class CategoryUseCase implements ICategoryUseCase {
     @Autowired
     private ICategoryRepository categoryRepository;
-
-    public List<Category> getAllCategories() {
-        return (List<Category>) categoryRepository.findAll();
-    }
 
     public Category getCategoryById(int id) {
         return categoryRepository.findById(id).get();
@@ -39,14 +35,13 @@ public class CategoryUseCase implements ICategoryUseCase {
     }
 
     @Override
-    public List<Category> categoryList() {
-        // TODO Auto-generated method stub
-        return null;
+    public ReturnReponse<Category> categoryList() {
+        return ReturnReponse.<Category>builder().message("data found successfully").succeeded(true)
+                .values(categoryRepository.findAll()).build();
     }
 
     @Override
     public Category save(Category category) {
-        // TODO Auto-generated method stub
         return null;
     }
 }

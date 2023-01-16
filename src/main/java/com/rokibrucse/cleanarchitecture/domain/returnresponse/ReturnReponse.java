@@ -1,4 +1,4 @@
-package com.rokibrucse.cleanarchitecture.presentation.adapters.config.returnresponse;
+package com.rokibrucse.cleanarchitecture.domain.returnresponse;
 
 import java.util.List;
 

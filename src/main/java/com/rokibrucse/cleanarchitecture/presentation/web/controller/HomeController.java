@@ -1,6 +1,5 @@
-package com.rokibrucse.cleanarchitecture.presentation.adapters.web.controller;
+package com.rokibrucse.cleanarchitecture.presentation.web.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 public class HomeController {

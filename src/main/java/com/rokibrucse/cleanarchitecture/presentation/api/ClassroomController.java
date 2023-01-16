@@ -1,4 +1,4 @@
-package com.rokibrucse.cleanarchitecture.presentation.adapters.api.controller;
+package com.rokibrucse.cleanarchitecture.presentation.api;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

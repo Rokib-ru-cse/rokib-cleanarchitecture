@@ -1,10 +1,8 @@
-package com.rokibrucse.cleanarchitecture.presentation.adapters.config.exceptionhandler;
+package com.rokibrucse.cleanarchitecture.domain.exceptionhandler;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.*;
 
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -12,7 +10,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 
-import com.rokibrucse.cleanarchitecture.presentation.adapters.config.returnresponse.ReturnReponse;
+import com.rokibrucse.cleanarchitecture.domain.returnresponse.ReturnReponse;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {
@@ -36,7 +34,10 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ReturnReponse<Object>> handleValidationExceptions(MethodArgumentNotValidException ex) {
-        ReturnReponse<Object> response =  ReturnReponse.<Object>builder().message(ex.getBindingResult().getFieldError().getField()+" "+ex.getBindingResult().getFieldError().getDefaultMessage()).succeeded(false).build();
+        ReturnReponse<Object> response = ReturnReponse.<Object>builder()
+                .message(ex.getBindingResult().getFieldError().getField() + " "
+                        + ex.getBindingResult().getFieldError().getDefaultMessage())
+                .succeeded(false).build();
         return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
     }
 }

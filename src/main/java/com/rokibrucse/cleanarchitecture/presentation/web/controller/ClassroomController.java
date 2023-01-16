@@ -1,10 +1,9 @@
-package com.rokibrucse.cleanarchitecture.presentation.adapters.web.controller;
+package com.rokibrucse.cleanarchitecture.presentation.web.controller;
 
 import com.rokibrucse.cleanarchitecture.application.usecase.IClassroomUseCase;
 import com.rokibrucse.cleanarchitecture.domain.entities.Classroom;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -16,9 +15,8 @@ public class ClassroomController {
 
     @GetMapping("/classrooms")
     public String classroomList(Model model) {
-        model.addAttribute("classrooms",(List<Classroom>) useCase.classroomList());
+        model.addAttribute("classrooms", (List<Classroom>) useCase.classroomList());
         return "classroom/index";
     }
-
 
 }

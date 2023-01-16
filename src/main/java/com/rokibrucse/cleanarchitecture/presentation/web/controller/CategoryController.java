@@ -1,7 +1,6 @@
-package com.rokibrucse.cleanarchitecture.presentation.adapters.web.controller;
+package com.rokibrucse.cleanarchitecture.presentation.web.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,7 +17,7 @@ public class CategoryController {
 
     @GetMapping("/categories")
     public String categories(Model model) {
-        List<Category> categoryList = useCase.categoryList();
+        List<Category> categoryList = useCase.categoryList().getValues();
         model.addAttribute("categories", categoryList);
         return "category/index";
     }
@@ -30,10 +29,9 @@ public class CategoryController {
     }
 
     @PostMapping("/categories")
-    public String addNewCategory(Category category){
+    public String addNewCategory(Category category) {
         useCase.save(category);
         return "redirect:/categories";
     }
-
 
 }
